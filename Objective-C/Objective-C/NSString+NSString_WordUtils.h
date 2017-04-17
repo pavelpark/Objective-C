@@ -10,4 +10,9 @@
 
 @interface NSString (NSString_WordUtils)
 
+
++(NSString *)reversed: (NSString *)string;
+
+-(NSArray *)givesBackWords;
+
 @end

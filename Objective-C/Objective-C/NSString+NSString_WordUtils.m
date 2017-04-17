@@ -10,4 +10,13 @@
 
 @implementation NSString (NSString_WordUtils)
 
++(NSString *)reversed: (NSString *)string{
+    return string;
+}
+-(NSArray *)givesBackWords {
+    NSMutableArray * list = [[NSMutableArray alloc] init];
+    return list;
+}
+
+
 @end
