@@ -35,6 +35,7 @@
 		DBCF0DAD1EA5528D003515CC /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		DBCF0DAF1EA55508003515CC /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		DBCF0DB01EA55508003515CC /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		DBCF0DB21EA561E4003515CC /* PersonQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonQueue.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 				DBCF0DAD1EA5528D003515CC /* Person.m */,
 				DBCF0DAF1EA55508003515CC /* Employee.h */,
 				DBCF0DB01EA55508003515CC /* Employee.m */,
+				DBCF0DB21EA561E4003515CC /* PersonQueue.h */,
 				DBCF0D9B1EA5506C003515CC /* Main.storyboard */,
 				DBCF0D9E1EA5506C003515CC /* Assets.xcassets */,
 				DBCF0DA01EA5506C003515CC /* LaunchScreen.storyboard */,
