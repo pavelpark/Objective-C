@@ -14,6 +14,8 @@
 		DBCF0D9F1EA5506C003515CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCF0D9E1EA5506C003515CC /* Assets.xcassets */; };
 		DBCF0DA21EA5506C003515CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCF0DA01EA5506C003515CC /* LaunchScreen.storyboard */; };
 		DBCF0DAB1EA55138003515CC /* NSString+NSString_WordUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCF0DAA1EA55138003515CC /* NSString+NSString_WordUtils.m */; };
+		DBCF0DAE1EA5528D003515CC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCF0DAD1EA5528D003515CC /* Person.m */; };
+		DBCF0DB11EA55508003515CC /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCF0DB01EA55508003515CC /* Employee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		DBCF0DA31EA5506C003515CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBCF0DA91EA55138003515CC /* NSString+NSString_WordUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSString_WordUtils.h"; sourceTree = "<group>"; };
 		DBCF0DAA1EA55138003515CC /* NSString+NSString_WordUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSString_WordUtils.m"; sourceTree = "<group>"; };
+		DBCF0DAC1EA5528D003515CC /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		DBCF0DAD1EA5528D003515CC /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		DBCF0DAF1EA55508003515CC /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		DBCF0DB01EA55508003515CC /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				DBCF0D961EA5506C003515CC /* AppDelegate.m */,
 				DBCF0D981EA5506C003515CC /* ViewController.h */,
 				DBCF0D991EA5506C003515CC /* ViewController.m */,
+				DBCF0DAC1EA5528D003515CC /* Person.h */,
+				DBCF0DAD1EA5528D003515CC /* Person.m */,
+				DBCF0DAF1EA55508003515CC /* Employee.h */,
+				DBCF0DB01EA55508003515CC /* Employee.m */,
 				DBCF0D9B1EA5506C003515CC /* Main.storyboard */,
 				DBCF0D9E1EA5506C003515CC /* Assets.xcassets */,
 				DBCF0DA01EA5506C003515CC /* LaunchScreen.storyboard */,
@@ -158,6 +168,8 @@
 			files = (
 				DBCF0D9A1EA5506C003515CC /* ViewController.m in Sources */,
 				DBCF0D971EA5506C003515CC /* AppDelegate.m in Sources */,
+				DBCF0DAE1EA5528D003515CC /* Person.m in Sources */,
+				DBCF0DB11EA55508003515CC /* Employee.m in Sources */,
 				DBCF0D941EA5506C003515CC /* main.m in Sources */,
 				DBCF0DAB1EA55138003515CC /* NSString+NSString_WordUtils.m in Sources */,
 			);
