@@ -10,17 +10,32 @@
 
 @implementation Employee
 
-int employeeNumber;
-int yearsEmployed;
-NSString *managerName;
+//Private Stuff "_"
+int _employeeNumber;
+int _yearsEmployed;
+NSString *_managerName;
 
+//Getters
 -(int)employeeNumber {
-    return employeeNumber;
+    return _employeeNumber;
 }
 -(int)yearsEmployed {
-    return yearsEmployed;
+    return _yearsEmployed;
 }
 -(NSString *)managerName {
-    return managerName;
+    return _managerName;
+}
+
+//Setters
+//Make Sure method name beggins with set.
+//Make sure argument starts with "the, a, an" article.
+-(void)setEmployeeNumber: (int) theEmployeeNumber{
+    _employeeNumber = theEmployeeNumber;
+}
+-(void)setYearsEmployed:(int) theYearsEmployed{
+    _yearsEmployed = theYearsEmployed;
+}
+-(void)setManagerName:(NSString *) theManagerName{
+    _managerName = theManagerName;
 }
 @end

@@ -15,5 +15,8 @@
 -(int)yearsEmployed;
 -(NSString *)managerName;
 
-
+//Setter
+-(void)setEmployeeNumber: (int) theEmployeeNumber;
+-(void)setYearsEmployed:(int) theYearsEmployed;
+-(void)setManagerName: (NSString *) theManagerName;
 @end
