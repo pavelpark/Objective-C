@@ -35,6 +35,9 @@
     return list;
 }
 
+//-(NSArray *)givesBackWords{
+//    return [self componentsSeparatedByString: @""];
+//}
 
 //func scan(_ regex: String) -> [String] {
 //    do {
