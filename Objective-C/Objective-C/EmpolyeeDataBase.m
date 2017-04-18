@@ -10,11 +10,19 @@
 
 @interface EmpolyeeDataBase ()
 
-@property(strong, nonatomic) NSArray *employees;
+@property(strong, nonatomic) NSMutableArray *employees;
+
 
 @end
 
 @implementation EmpolyeeDataBase
+
+
+//-(void)add: (Employee *)employee;
+//-(void)remove:(Employee *)employee;
+//-(void)removeEmployeeatIndex:(int)index;
+//
+//-(void)removeAllEmployees;
 
 +(instancetype)shared {
     
@@ -22,7 +30,7 @@
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        shared = [[[self class] alloc]init];
+        shared = [[EmpolyeeDataBase alloc]init];
     });
     return shared;
 }
@@ -40,4 +48,6 @@
     return [[self documentsDirectory] URLByAppendingPathComponent:@"archive"];
     
 }
+
+
 @end

@@ -14,11 +14,11 @@
 
 -(NSInteger)count;
 -(NSArray *)allEmployees;
--(Employee *)employeeAtIndex:(int)index;
+-(Employee *)employeeAtIndex:(NSNumber*)index;
 
 -(void)add: (Employee *)employee;
 -(void)remove:(Employee *)employee;
--(void)removeEmployeeatIndex:(int)index;
+-(void)removeEmployeeatIndex:(NSNumber*)index;
 
 -(void)removeAllEmployees;
 

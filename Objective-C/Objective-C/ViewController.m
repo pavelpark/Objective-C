@@ -18,11 +18,12 @@
 
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     NSMutableString *mutableString = [[NSMutableString alloc] initWithString:@"string"];
     [NSMutableString reversed: mutableString];
     
-    Employee *original = [[Employee alloc]initWithFirstName:@"pavel" lastName:@"parkhomey" age:@19 yearsEmployed:@2 andManager:@"Brook"];
+    Employee *original = [[Employee alloc]initWithFirstName:@"pavel" lastName:@"parkhomey" age:@19 yearsEmployed:@2 andManager:@"Brook" email:@"pavelpark@aol.com"];
     
     Employee *newInstructor = [original copy];
     

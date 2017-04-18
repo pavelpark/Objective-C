@@ -9,20 +9,16 @@
 #import "Person.h"
 
 @interface Employee : Person <NSCopying>
+//Getter and the Setter
+@property(strong,nonatomic) NSNumber *yearsEmployed;
+@property(strong,nonatomic) NSString *managerName;
+@property(strong,nonatomic) NSString *email;
 
-//Getter
--(int)employeeNumber;
--(int)yearsEmployed;
--(NSString *)managerName;
-
-//Setter
--(void)setEmployeeNumber: (int) theEmployeeNumber;
--(void)setYearsEmployed:(int) theYearsEmployed;
--(void)setManagerName: (NSString *) theManagerName;
 
 -(instancetype)initWithFirstName:(NSString *)firstName
                         lastName:(NSString *)lastName
                              age:(NSNumber *)age
                    yearsEmployed:(NSNumber *)yearsEmployed
-                      andManager:(NSString *)managerName;
+                      andManager:(NSString *)managerName
+                           email:(NSString *)email;
 @end

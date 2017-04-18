@@ -14,9 +14,10 @@
                         lastName:(NSString *)lastName
                              age:(NSNumber *)age
                    yearsEmployed:(NSNumber *)yearsEmployed
-                      andManager:(NSString *)managerName{
+                      andManager:(NSString *)managerName
+                           email:(NSString *)email{
     
-    self = [super initWithFirstName:firstName lastName:lastName andAge:age];
+    self = [super initWithFirstName:firstName lastName:lastName andAge:age ];
     
     if (self) {
         _yearsEmployed = yearsEmployed;
