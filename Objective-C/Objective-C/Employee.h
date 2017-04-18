@@ -8,7 +8,7 @@
 
 #import "Person.h"
 
-@interface Employee : Person
+@interface Employee : Person <NSCopying>
 
 //Getter
 -(int)employeeNumber;
@@ -19,4 +19,10 @@
 -(void)setEmployeeNumber: (int) theEmployeeNumber;
 -(void)setYearsEmployed:(int) theYearsEmployed;
 -(void)setManagerName: (NSString *) theManagerName;
+
+-(instancetype)initWithFirstName:(NSString *)firstName
+                        lastName:(NSString *)lastName
+                             age:(NSNumber *)age
+                   yearsEmployed:(NSNumber *)yearsEmployed
+                      andManager:(NSString *)managerName;
 @end

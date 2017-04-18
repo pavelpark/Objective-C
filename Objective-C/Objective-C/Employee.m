@@ -10,6 +10,35 @@
 
 @implementation Employee
 
+-(instancetype)initWithFirstName:(NSString *)firstName
+                        lastName:(NSString *)lastName
+                             age:(NSNumber *)age
+                   yearsEmployed:(NSNumber *)yearsEmployed
+                      andManager:(NSString *)managerName{
+    
+    self = [super initWithFirstName:firstName lastName:lastName andAge:age];
+    
+    if (self) {
+        _yearsEmployed = yearsEmployed;
+        _managerName = managerName;
+        _employeeNumber = [NSNumber numberWithInt:arc4random_uniform(1000)];
+        
+        //Use arc for rancdom to get a random number from the number you set it too like we did above "1000".
+    }
+    return self;
+}
+
+-(id)copyWithZone:(NSZone *)zone {
+    
+    Employee *employee = [super copyWithZone:zone];
+    
+    employee.employeeNumber = self.employeeNumber;
+    employee.managerName = self.managerName;
+    employee.yearsEmployed = self.yearsEmployed;
+    
+    return employee;
+}
+
 //Private Stuff "_"
 int _employeeNumber;
 int _yearsEmployed;
