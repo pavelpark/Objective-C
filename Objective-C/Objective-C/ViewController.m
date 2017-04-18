@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [NSString reversed: @"string"];
+    NSMutableString *mutableString = [[NSMutableString alloc] initWithString:@"string"];
+    [NSMutableString reversed: mutableString];
 }
-
 
 @end
