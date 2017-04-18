@@ -8,7 +8,24 @@
 
 #import "EmpolyeeDataBase.h"
 
+@interface EmpolyeeDataBase ()
+
+@property(strong, nonatomic) NSArray *employees;
+
+@end
+
 @implementation EmpolyeeDataBase
+
++(instancetype)shared {
+    
+    static EmpolyeeDataBase *shared = nil;
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        shared = [[[self class] alloc]init];
+    });
+    return shared;
+}
 
 //MARK: Helper Methods
 

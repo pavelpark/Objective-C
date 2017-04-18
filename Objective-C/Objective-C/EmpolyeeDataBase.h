@@ -7,7 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Employee.h"
 @interface EmpolyeeDataBase : NSObject
+
++(instancetype)shared;
+
+-(NSInteger)count;
+-(NSArray *)allEmployees;
+-(Employee *)employeeAtIndex:(int)index;
+
+-(void)add: (Employee *)employee;
+-(void)remove:(Employee *)employee;
+-(void)removeEmployeeatIndex:(int)index;
+
+-(void)removeAllEmployees;
 
 @end
