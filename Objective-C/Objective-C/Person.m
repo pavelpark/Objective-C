@@ -10,9 +10,9 @@
 
 @implementation Person
 
-- (instancetype)initWithFirstName:(NSString *)
-                firstName lastName:(NSString *)
-                lastName andAge:(NSNumber *)age {
+- (instancetype)initWithFirstName:(NSString *)firstName
+                         lastName:(NSString *)lastName
+                           andAge:(NSNumber *)age {
     
     self = [super init];
     if (self) {
@@ -22,10 +22,11 @@
     }
     return self;
 }
-
-NSString *firstName;
-NSString *lastName;
-int age;
+//Varsion 2.0 for the setter and getter.
+//
+//NSString *firstName;
+//NSString *lastName;
+//int age;
 
 
 -(id)copyWithZone:(NSZone *)zone{
