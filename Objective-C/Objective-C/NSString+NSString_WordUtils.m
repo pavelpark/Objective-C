@@ -23,18 +23,21 @@
     return reversedString;
 }
 
--(NSArray *)givesBackWords {
-    NSMutableArray * list = [[NSMutableArray alloc] init];
-    NSError *error;
-    @try {
-        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern: @"[:alpha:] +" options:NSRegularExpressionCaseInsensitive error: &error];
-    } @catch (NSException *exception) {
-      //NSRegularExpression *regex = [NSOrderedSame NSRangeException];
-    }
-    
-    return list;
-}
+//-(NSArray *)givesBackWords {
+//    NSMutableArray * list = [[NSMutableArray alloc] init];
+//    NSError *error;
+//    @try {
+//        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern: @"[:alpha:] +" options:NSRegularExpressionCaseInsensitive error: &error];
+//    } @catch (NSException *exception) {
+//      //NSRegularExpression *regex = [NSOrderedSame NSRangeException];
+//    }
+//    
+//    return list;
+//}
 
+//-(NSArray *)givesBackWords{
+//    return [self componentsSeparatedByString: @""];
+//}
 
 //func scan(_ regex: String) -> [String] {
 //    do {

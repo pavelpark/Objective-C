@@ -8,16 +8,33 @@
 
 #import "ViewController.h"
 #import "NSString+NSString_WordUtils.h"
+#import "Employee.h"
+#import "EmpolyeeDataBase.h"
 @interface ViewController ()
+
 
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     NSMutableString *mutableString = [[NSMutableString alloc] initWithString:@"string"];
     [NSMutableString reversed: mutableString];
+    
+    Employee *original = [[Employee alloc]initWithFirstName:@"pavel" lastName:@"parkhomey" age:@19 email:@"pavelpark@aol.com" yearsEmployed:@2 andManager:@"Brook"];
+    
+    Employee *newInstructor = [original copy];
+    
+    newInstructor.firstName = @"Mike";
+    
+    [[EmpolyeeDataBase shared] add: original];
+    [[EmpolyeeDataBase shared] add: newInstructor];
+    
+    NSLog(original.firstName);
 }
 
+
+//-NSString *givesBackwords = @"String";
 @end
