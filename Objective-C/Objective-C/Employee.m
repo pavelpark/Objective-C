@@ -22,6 +22,7 @@
     if (self) {
         _yearsEmployed = yearsEmployed;
         _managerName = managerName;
+        _email = email;
         _employeeNumber = [NSNumber numberWithInt:arc4random_uniform(1000)];
         //Use arc for rancdom to get a random number from the number you set it too like we did above "1000".
     }

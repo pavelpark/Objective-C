@@ -29,8 +29,9 @@
     
     newInstructor.firstName = @"Mike";
     
-    [[EmpolyeeDataBase shared] add: original];
-    [[EmpolyeeDataBase shared] add: newInstructor];
+    
+//    [[EmpolyeeDataBase shared] add: original];
+//    [[EmpolyeeDataBase shared] add: newInstructor];
     
 }
 

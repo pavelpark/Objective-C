@@ -7,6 +7,8 @@
 //
 
 #import "AddEmployeeViewController.h"
+#import "Employee.h"
+#import "EmpolyeeDataBase.h"
 
 @interface AddEmployeeViewController ()
 
@@ -28,8 +30,14 @@
 
 
 - (IBAction)backToMain:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion: NULL];
 }
 
 - (IBAction)saveButton:(UIButton *)sender {
+    Employee *original = [[Employee alloc]initWithFirstName: self.firstName.text lastName:self.lastName.text age:NULL email:self.emailAdress.text yearsEmployed:NULL andManager:@""];
+    [[EmpolyeeDataBase shared]add:original];
+    [self.navigationController popViewControllerAnimated:YES];
+
+    
 }
 @end

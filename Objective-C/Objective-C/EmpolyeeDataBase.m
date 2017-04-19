@@ -36,6 +36,7 @@
     [self.employees removeAllObjects];
     [self save];
 }
+
 -(NSInteger)count{
     return self.employees.count;
 }

@@ -100,10 +100,16 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="List" id="ope-Gq-DZu"/>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="yp6-aP-F7P">
+                        <barButtonItem key="leftBarButtonItem" title="Clear List" id="E26-6b-TyQ">
+                            <connections>
+                                <action selector="clearListButtonPressed:" destination="SGn-m1-Obe" id="TeZ-uj-4nN"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="New Employee" id="CoM-lr-nyr">
                             <connections>
-                                <segue destination="0K3-2x-dls" kind="presentation" id="RJx-IK-XAv"/>
+                                <segue destination="0K3-2x-dls" kind="show" id="RJx-IK-XAv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -146,33 +152,33 @@
                             <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helloquence_51716" translatesAutoresizingMaskIntoConstraints="NO" id="iQm-Nw-bNX">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXQ-Lj-skf">
-                                <rect key="frame" x="28" y="135" width="319" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXQ-Lj-skf">
+                                <rect key="frame" x="28" y="179" width="319" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Last Name" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5DC-BS-vYc">
-                                <rect key="frame" x="28" y="173" width="319" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5DC-BS-vYc">
+                                <rect key="frame" x="28" y="217" width="319" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email Adress" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G7Y-gg-mL9">
-                                <rect key="frame" x="28" y="211" width="319" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adress" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G7Y-gg-mL9">
+                                <rect key="frame" x="28" y="255" width="319" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aI-uh-jOO">
-                                <rect key="frame" x="313" y="253" width="34" height="30"/>
+                                <rect key="frame" x="313" y="297" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="saveButton:" destination="0K3-2x-dls" eventType="touchUpInside" id="sNs-oZ-A2S"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEu-CY-5Xt">
-                                <rect key="frame" x="28" y="253" width="48" height="30"/>
+                                <rect key="frame" x="28" y="297" width="48" height="30"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="backToMain:" destination="0K3-2x-dls" eventType="touchUpInside" id="5k1-nJ-Fyz"/>
