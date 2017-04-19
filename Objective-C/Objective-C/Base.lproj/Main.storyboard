@@ -28,7 +28,7 @@
                                 <rect key="frame" x="90" y="94" width="195" height="153"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5fW-uh-hlK" firstAttribute="top" secondItem="Hvn-dU-37r" secondAttribute="bottom" constant="30" id="1cS-Uv-Vpq"/>
                             <constraint firstAttribute="trailing" secondItem="5fW-uh-hlK" secondAttribute="trailing" constant="90" id="1rd-mp-KRN"/>
@@ -87,7 +87,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vkc-Mf-H96" firstAttribute="top" secondItem="q6S-9f-YMH" secondAttribute="bottom" id="Adm-ri-CSt"/>
                             <constraint firstAttribute="trailing" secondItem="q6S-9f-YMH" secondAttribute="trailing" id="B5h-sL-4Fn"/>
@@ -119,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZg-FF-ST2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2830" y="-640"/>
+            <point key="canvasLocation" x="2249" y="-700"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ywi-jK-Uco">
@@ -153,39 +153,44 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXQ-Lj-skf">
-                                <rect key="frame" x="28" y="179" width="319" height="30"/>
+                                <rect key="frame" x="28" y="135" width="319" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5DC-BS-vYc">
-                                <rect key="frame" x="28" y="217" width="319" height="30"/>
+                                <rect key="frame" x="28" y="173" width="319" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adress" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G7Y-gg-mL9">
-                                <rect key="frame" x="28" y="255" width="319" height="30"/>
+                                <rect key="frame" x="28" y="211" width="319" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aI-uh-jOO">
-                                <rect key="frame" x="313" y="297" width="34" height="30"/>
-                                <state key="normal" title="Save"/>
+                                <rect key="frame" x="313" y="253" width="34" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="saveButton:" destination="0K3-2x-dls" eventType="touchUpInside" id="sNs-oZ-A2S"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEu-CY-5Xt">
-                                <rect key="frame" x="28" y="297" width="48" height="30"/>
+                                <rect key="frame" x="28" y="253" width="48" height="30"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="backToMain:" destination="0K3-2x-dls" eventType="touchUpInside" id="5k1-nJ-Fyz"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5DC-BS-vYc" firstAttribute="top" secondItem="AXQ-Lj-skf" secondAttribute="bottom" constant="8" id="1JO-nR-Z2p"/>
                             <constraint firstAttribute="trailing" secondItem="G7Y-gg-mL9" secondAttribute="trailing" constant="28" id="8Aq-fq-hHB"/>
@@ -218,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JY3-b2-HgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2829.5999999999999" y="156.97151424287858"/>
+            <point key="canvasLocation" x="2249" y="157"/>
         </scene>
     </scenes>
     <resources>
