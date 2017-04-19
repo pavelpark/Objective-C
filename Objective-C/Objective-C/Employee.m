@@ -45,7 +45,7 @@ int _employeeNumber;
 int _yearsEmployed;
 NSString *_managerName;
 
-//2.0
+//Version 2.0 of Objective-C
 //Getters
 //-(int)employeeNumber {
 //    return _employeeNumber;

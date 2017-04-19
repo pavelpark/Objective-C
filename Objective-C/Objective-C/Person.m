@@ -22,7 +22,7 @@
     }
     return self;
 }
-//Varsion 2.0 for the setter and getter.
+//Varsion 2.0 of Objective-C for the setter and getter.
 //
 //NSString *firstName;
 //NSString *lastName;
