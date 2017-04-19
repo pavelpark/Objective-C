@@ -32,7 +32,6 @@
     [[EmpolyeeDataBase shared] add: original];
     [[EmpolyeeDataBase shared] add: newInstructor];
     
-    NSLog(original.firstName);
 }
 
 

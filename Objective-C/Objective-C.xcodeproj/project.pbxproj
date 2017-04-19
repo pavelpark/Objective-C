@@ -81,16 +81,11 @@
 				DBCF0DAA1EA55138003515CC /* NSString+NSString_WordUtils.m */,
 				DBCF0D951EA5506C003515CC /* AppDelegate.h */,
 				DBCF0D961EA5506C003515CC /* AppDelegate.m */,
-				DBCF0D981EA5506C003515CC /* ViewController.h */,
-				DBCF0D991EA5506C003515CC /* ViewController.m */,
 				DBCF0DAC1EA5528D003515CC /* Person.h */,
 				DBCF0DAD1EA5528D003515CC /* Person.m */,
 				DBCF0DAF1EA55508003515CC /* Employee.h */,
 				DBCF0DB01EA55508003515CC /* Employee.m */,
 				DBCF0DB21EA561E4003515CC /* PersonQueue.h */,
-				DBCF0D9B1EA5506C003515CC /* Main.storyboard */,
-				DBCF0D9E1EA5506C003515CC /* Assets.xcassets */,
-				DBCF0DA01EA5506C003515CC /* LaunchScreen.storyboard */,
 				DBCF0DA31EA5506C003515CC /* Info.plist */,
 				DBCF0D921EA5506C003515CC /* Supporting Files */,
 			);
@@ -108,8 +103,6 @@
 		DBCF0DB61EA6877F003515CC /* model */ = {
 			isa = PBXGroup;
 			children = (
-				DBCF0DBC1EA6D645003515CC /* TableViewController.h */,
-				DBCF0DBD1EA6D645003515CC /* TableViewController.m */,
 				DBCF0DB31EA68770003515CC /* EmpolyeeDataBase.h */,
 				DBCF0DB41EA68770003515CC /* EmpolyeeDataBase.m */,
 			);
@@ -119,6 +112,9 @@
 		DBCF0DB71EA6879C003515CC /* view */ = {
 			isa = PBXGroup;
 			children = (
+				DBCF0D9B1EA5506C003515CC /* Main.storyboard */,
+				DBCF0D9E1EA5506C003515CC /* Assets.xcassets */,
+				DBCF0DA01EA5506C003515CC /* LaunchScreen.storyboard */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -126,6 +122,10 @@
 		DBCF0DB81EA687A2003515CC /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				DBCF0DBC1EA6D645003515CC /* TableViewController.h */,
+				DBCF0DBD1EA6D645003515CC /* TableViewController.m */,
+				DBCF0D981EA5506C003515CC /* ViewController.h */,
+				DBCF0D991EA5506C003515CC /* ViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
