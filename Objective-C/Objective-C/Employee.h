@@ -8,7 +8,7 @@
 
 #import "Person.h"
 
-@interface Employee : Person <NSCopying>
+@interface Employee : Person <NSCopying, NSCoding>
 //Getter and the Setter 
 @property (strong,nonatomic) NSNumber *yearsEmployed;
 @property (strong,nonatomic) NSNumber *employeeNumber;

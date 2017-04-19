@@ -171,7 +171,7 @@
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="CQZ-Rt-DHj">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.9367908331" green="0.94606598980000001" blue="0.94606598980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="FJ6-Wo-1Be" kind="relationship" relationship="viewControllers" id="cXy-3U-qAa"/>
