@@ -13,9 +13,9 @@
 -(instancetype)initWithFirstName:(NSString *)firstName
                         lastName:(NSString *)lastName
                              age:(NSNumber *)age
+                           email:(NSString *)email
                    yearsEmployed:(NSNumber *)yearsEmployed
-                      andManager:(NSString *)managerName
-                           email:(NSString *)email{
+                      andManager:(NSString *)managerName{
     
     self = [super initWithFirstName:firstName lastName:lastName andAge:age ];
     
@@ -23,11 +23,11 @@
         _yearsEmployed = yearsEmployed;
         _managerName = managerName;
         _employeeNumber = [NSNumber numberWithInt:arc4random_uniform(1000)];
-        
         //Use arc for rancdom to get a random number from the number you set it too like we did above "1000".
     }
     return self;
 }
+
 
 -(id)copyWithZone:(NSZone *)zone {
     
@@ -46,26 +46,26 @@ int _yearsEmployed;
 NSString *_managerName;
 
 //Getters
--(int)employeeNumber {
-    return _employeeNumber;
-}
--(int)yearsEmployed {
-    return _yearsEmployed;
-}
--(NSString *)managerName {
-    return _managerName;
-}
+//-(int)employeeNumber {
+//    return _employeeNumber;
+//}
+//-(NSNumber *)yearsEmployed {
+//    return _yearsEmployed;
+//}
+//-(NSString *)managerName {
+//    return _managerName;
+//}
 
 //Setters
 //Make Sure method name beggins with set.
 //Make sure argument starts with "the, a, an" article.
--(void)setEmployeeNumber: (int) theEmployeeNumber{
-    _employeeNumber = theEmployeeNumber;
-}
--(void)setYearsEmployed:(int) theYearsEmployed{
-    _yearsEmployed = theYearsEmployed;
-}
--(void)setManagerName:(NSString *) theManagerName{
-    _managerName = theManagerName;
-}
+//-(void)setEmployeeNumber: (int) theEmployeeNumber{
+//    _employeeNumber = theEmployeeNumber;
+//}
+//-(void)setYearsEmployed:(int) theYearsEmployed{
+//    _yearsEmployed = theYearsEmployed;
+//}
+//-(void)setManagerName:(NSString *) theManagerName{
+//    _managerName = theManagerName;
+//}
 @end

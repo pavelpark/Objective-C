@@ -18,11 +18,29 @@
 @implementation EmpolyeeDataBase
 
 
-//-(void)add: (Employee *)employee;
-//-(void)remove:(Employee *)employee;
-//-(void)removeEmployeeatIndex:(int)index;
-//
-//-(void)removeAllEmployees;
+-(void)add: (Employee *)employee{
+    [self.employees addObject:employee];
+}
+
+-(void)remove:(Employee *)employee{
+    [self.employees removeObject:employee];
+}
+-(void)removeEmployeeatIndex:(int)index{
+    [self.employees removeObjectAtIndex:index];
+}
+
+-(void)removeAllEmployees{
+    [self.employees removeAllObjects];
+}
+-(NSInteger)count{
+    return self.employees.count;
+}
+-(NSArray *)allEmployees{
+    return self.employees;
+}
+-(Employee *)employeeAtIndex:(int)index{
+    return [self.employees objectAtIndex:index];
+}
 
 +(instancetype)shared {
     
@@ -33,6 +51,15 @@
         shared = [[EmpolyeeDataBase alloc]init];
     });
     return shared;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.employees = [[NSMutableArray alloc]init];
+    }
+    return self;
 }
 
 //MARK: Helper Methods

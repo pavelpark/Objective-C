@@ -17,6 +17,7 @@
 		DBCF0DAE1EA5528D003515CC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCF0DAD1EA5528D003515CC /* Person.m */; };
 		DBCF0DB11EA55508003515CC /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCF0DB01EA55508003515CC /* Employee.m */; };
 		DBCF0DB51EA68770003515CC /* EmpolyeeDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCF0DB41EA68770003515CC /* EmpolyeeDataBase.m */; };
+		DBCF0DBE1EA6D645003515CC /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCF0DBD1EA6D645003515CC /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		DBCF0DB21EA561E4003515CC /* PersonQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonQueue.h; sourceTree = "<group>"; };
 		DBCF0DB31EA68770003515CC /* EmpolyeeDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmpolyeeDataBase.h; sourceTree = "<group>"; };
 		DBCF0DB41EA68770003515CC /* EmpolyeeDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmpolyeeDataBase.m; sourceTree = "<group>"; };
+		DBCF0DBC1EA6D645003515CC /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
+		DBCF0DBD1EA6D645003515CC /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 		DBCF0DB61EA6877F003515CC /* model */ = {
 			isa = PBXGroup;
 			children = (
+				DBCF0DBC1EA6D645003515CC /* TableViewController.h */,
+				DBCF0DBD1EA6D645003515CC /* TableViewController.m */,
 				DBCF0DB31EA68770003515CC /* EmpolyeeDataBase.h */,
 				DBCF0DB41EA68770003515CC /* EmpolyeeDataBase.m */,
 			);
@@ -204,6 +209,7 @@
 				DBCF0DB11EA55508003515CC /* Employee.m in Sources */,
 				DBCF0D941EA5506C003515CC /* main.m in Sources */,
 				DBCF0DAB1EA55138003515CC /* NSString+NSString_WordUtils.m in Sources */,
+				DBCF0DBE1EA6D645003515CC /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
