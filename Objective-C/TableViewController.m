@@ -8,7 +8,7 @@
 
 #import "TableViewController.h"
 #import "EmpolyeeDataBase.h"
-@interface TableViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface TableViewController () <UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableViewMain;
 
@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableViewMain.dataSource = self;
-    self.tableViewMain.delegate = self;
+//    self.tableViewMain.delegate = self;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [[EmpolyeeDataBase shared] count];
