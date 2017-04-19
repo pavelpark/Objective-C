@@ -22,12 +22,41 @@
     if (self) {
         _yearsEmployed = yearsEmployed;
         _managerName = managerName;
+        _email = email;
         _employeeNumber = [NSNumber numberWithInt:arc4random_uniform(1000)];
         //Use arc for rancdom to get a random number from the number you set it too like we did above "1000".
     }
     return self;
 }
 
+-(instancetype)initWithCoder:(NSCoder *)aDecoder{
+    
+    self = [super init];
+    
+    if (self) {
+        
+        self.firstName = [aDecoder decodeObjectForKey:@"firstName"];
+        self.lastName = [aDecoder decodeObjectForKey:@"lastName"];
+        self.age = [aDecoder decodeObjectForKey:@"age"];
+        self.email = [aDecoder decodeObjectForKey:@"email"];
+
+        
+        self.yearsEmployed = [aDecoder decodeObjectForKey:@"yearsEmployed"];
+        self.managerName = [aDecoder decodeObjectForKey:@"managerName"];
+        self.employeeNumber = [aDecoder decodeObjectForKey:@"employeeNumber"];
+    }
+    return self;
+}
+
+-(void)encodeWithCoder:(NSCoder *)aCoder{
+    [aCoder encodeObject:self.firstName forKey:@"firstName"];
+    [aCoder encodeObject:self.lastName forKey:@"lastName"];
+    [aCoder encodeObject:self.age forKey:@"age"];
+    [aCoder encodeObject:self.email forKey:@"email"];
+    [aCoder encodeObject:self.yearsEmployed forKey:@"yearsEmployed"];
+    [aCoder encodeObject:self.managerName forKey:@"managerName"];
+    [aCoder encodeObject:self.employeeNumber forKey:@"employeeNumber"];
+}
 
 -(id)copyWithZone:(NSZone *)zone {
     
@@ -45,7 +74,7 @@ int _employeeNumber;
 int _yearsEmployed;
 NSString *_managerName;
 
-//2.0
+//Version 2.0 of Objective-C
 //Getters
 //-(int)employeeNumber {
 //    return _employeeNumber;

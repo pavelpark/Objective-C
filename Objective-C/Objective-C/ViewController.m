@@ -29,10 +29,10 @@
     
     newInstructor.firstName = @"Mike";
     
-    [[EmpolyeeDataBase shared] add: original];
-    [[EmpolyeeDataBase shared] add: newInstructor];
     
-    NSLog(original.firstName);
+//    [[EmpolyeeDataBase shared] add: original];
+//    [[EmpolyeeDataBase shared] add: newInstructor];
+    
 }
 
 

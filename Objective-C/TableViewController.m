@@ -8,7 +8,7 @@
 
 #import "TableViewController.h"
 #import "EmpolyeeDataBase.h"
-@interface TableViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface TableViewController () <UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableViewMain;
 
@@ -16,14 +16,27 @@
 
 @implementation TableViewController
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.tableViewMain reloadData];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableViewMain.dataSource = self;
-    self.tableViewMain.delegate = self;
+//    self.tableViewMain.delegate = self;
 }
+- (IBAction)clearListButtonPressed:(UIBarButtonItem *)sender {
+    [[EmpolyeeDataBase shared] removeAllEmployees];
+    [self.tableViewMain reloadData];
+}
+
+
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [[EmpolyeeDataBase shared] count];
-}
+   }
+
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EmployeeCell" forIndexPath:indexPath];
@@ -31,8 +44,7 @@
     NSArray *employees = [[EmpolyeeDataBase shared] allEmployees];
     Employee *employee = employees[indexPath.row];
     
-    
-    cell.textLabel.text = employee.firstName;
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ %@",employee.firstName, employee.lastName, employee.email];
     return cell;
 }
 
