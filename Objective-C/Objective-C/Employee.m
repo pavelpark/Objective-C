@@ -29,6 +29,21 @@
     return self;
 }
 
+-(void)setemail:(NSString *)email{
+    
+    if(_email != email){
+        
+        [email retain];
+        [_email release];
+        
+        _email = email;
+    }
+}
+-(NSString *)email{
+    return _email;
+}
+//-(void)
+
 -(instancetype)initWithCoder:(NSCoder *)aDecoder{
     
     self = [super init];
