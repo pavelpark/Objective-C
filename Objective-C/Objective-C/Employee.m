@@ -42,7 +42,30 @@
 -(NSString *)email{
     return _email;
 }
-//-(void)
+-(void)setyearsEmployed:(NSNumber *)yearsEmployed{
+    
+    if(_yearsEmployed != yearsEmployed){
+        
+        [yearsEmployed retain];
+        [_yearsEmployed release];
+        
+        _yearsEmployed = yearsEmployed;
+    }
+}
+-(NSNumber *)yearsEmployed{
+    return _yearsEmployed;
+}
+-(void)setManagerName:(NSString *)managerName{
+    
+    if(_managerName != managerName){
+        
+        [managerName retain];
+        [_managerName release];
+    }
+}
+-(NSString *)managerName{
+    return _managerName;
+}
 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder{
     
