@@ -28,7 +28,6 @@
     }
     return self;
 }
-
 -(void)setemail:(NSString *)email{
     
     if(_email != email){
@@ -39,9 +38,7 @@
         _email = email;
     }
 }
--(NSString *)email{
-    return _email;
-}
+
 -(void)setyearsEmployed:(NSNumber *)yearsEmployed{
     
     if(_yearsEmployed != yearsEmployed){
@@ -52,9 +49,7 @@
         _yearsEmployed = yearsEmployed;
     }
 }
--(NSNumber *)yearsEmployed{
-    return _yearsEmployed;
-}
+
 -(void)setManagerName:(NSString *)managerName{
     
     if(_managerName != managerName){
@@ -62,9 +57,6 @@
         [managerName retain];
         [_managerName release];
     }
-}
--(NSString *)managerName{
-    return _managerName;
 }
 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder{

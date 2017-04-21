@@ -33,9 +33,6 @@
         _firstName = firstName;
     }
 }
--(NSString *)firstName{
-    return _firstName;
-}
 
 -(void)setlastName:(NSString *)lastName{
     
@@ -47,9 +44,7 @@
         _lastName = lastName;
     }
 }
--(NSString *)lastName{
-    return _lastName;
-}
+
 -(void)setAge:(NSNumber *)age{
     
     if(_age != age){
@@ -60,9 +55,7 @@
         _age = age;
     }
 }
--(NSString *)setAge{
-    return _age;
-}
+
 
 //Varsion 2.0 of Objective-C for the setter and getter.
 //
