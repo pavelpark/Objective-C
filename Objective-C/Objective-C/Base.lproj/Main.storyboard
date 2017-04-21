@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="5fW-uh-hlK">
-                                <rect key="frame" x="90" y="94" width="195" height="153"/>
+                                <rect key="frame" x="90" y="94" width="195" height="173"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -38,7 +38,7 @@
                             <constraint firstItem="5fW-uh-hlK" firstAttribute="leading" secondItem="lZU-Em-5Bf" secondAttribute="leading" constant="90" id="UPS-G3-Swv"/>
                             <constraint firstItem="fr5-uD-OOg" firstAttribute="top" secondItem="Hvn-dU-37r" secondAttribute="bottom" id="jye-OV-Mhh"/>
                             <constraint firstItem="fr5-uD-OOg" firstAttribute="leading" secondItem="lZU-Em-5Bf" secondAttribute="leading" id="mMC-Wa-l9c"/>
-                            <constraint firstItem="FS4-rj-tTv" firstAttribute="top" secondItem="5fW-uh-hlK" secondAttribute="bottom" constant="420" id="oFl-O3-3W0"/>
+                            <constraint firstItem="FS4-rj-tTv" firstAttribute="top" secondItem="5fW-uh-hlK" secondAttribute="bottom" constant="400" id="oFl-O3-3W0"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="NeL-Ci-EKq"/>
@@ -233,6 +233,6 @@
         <image name="logo" width="339" height="341"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RJx-IK-XAv"/>
+        <segue reference="Qvr-A4-lPW"/>
     </inferredMetricsTieBreakers>
 </document>
