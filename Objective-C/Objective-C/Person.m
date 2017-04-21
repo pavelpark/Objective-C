@@ -16,9 +16,9 @@
     
     self = [super init];
     if (self) {
-        _firstName = firstName;
-        _lastName = lastName;
-        _age = age;
+        _firstName = [firstName retain];
+        _lastName = [lastName retain];
+        _age = [age retain];
     }
     return self;
 }
