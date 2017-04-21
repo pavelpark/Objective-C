@@ -22,6 +22,48 @@
     }
     return self;
 }
+
+-(void)setName:(NSString *)firstName{
+    
+    if(_firstName != firstName){
+        
+        [firstName retain];
+        [_firstName release];
+        
+        _firstName = firstName;
+    }
+}
+-(NSString *)firstName{
+    return _firstName;
+}
+
+-(void)setlastName:(NSString *)lastName{
+    
+    if(_lastName != lastName){
+        
+        [lastName retain];
+        [_lastName release];
+        
+        _lastName = lastName;
+    }
+}
+-(NSString *)lastName{
+    return _lastName;
+}
+-(void)setAge:(NSNumber *)age{
+    
+    if(_age != age){
+        
+        [age retain];
+        [_age release];
+        
+        _age = age;
+    }
+}
+-(NSString *)setAge{
+    return _age;
+}
+
 //Varsion 2.0 of Objective-C for the setter and getter.
 //
 //NSString *firstName;

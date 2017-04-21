@@ -14,8 +14,8 @@
 		DBCF0D9F1EA5506C003515CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCF0D9E1EA5506C003515CC /* Assets.xcassets */; };
 		DBCF0DA21EA5506C003515CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCF0DA01EA5506C003515CC /* LaunchScreen.storyboard */; };
 		DBCF0DAB1EA55138003515CC /* NSString+NSString_WordUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCF0DAA1EA55138003515CC /* NSString+NSString_WordUtils.m */; };
-		DBCF0DAE1EA5528D003515CC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCF0DAD1EA5528D003515CC /* Person.m */; };
-		DBCF0DB11EA55508003515CC /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCF0DB01EA55508003515CC /* Employee.m */; };
+		DBCF0DAE1EA5528D003515CC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCF0DAD1EA5528D003515CC /* Person.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DBCF0DB11EA55508003515CC /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCF0DB01EA55508003515CC /* Employee.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DBCF0DB51EA68770003515CC /* EmpolyeeDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCF0DB41EA68770003515CC /* EmpolyeeDataBase.m */; };
 		DBCF0DBE1EA6D645003515CC /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCF0DBD1EA6D645003515CC /* TableViewController.m */; };
 		DBCF0DC11EA801BA003515CC /* AddEmployeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCF0DC01EA801BA003515CC /* AddEmployeeViewController.m */; };
