@@ -37,6 +37,7 @@
     Employee *original = [[Employee alloc]initWithFirstName: self.firstName.text lastName:self.lastName.text age:NULL email:self.emailAdress.text yearsEmployed:NULL andManager:@""];
     [[EmpolyeeDataBase shared]add:original];
     [self.navigationController popViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 
     
 }
