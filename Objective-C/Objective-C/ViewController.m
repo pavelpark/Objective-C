@@ -23,11 +23,11 @@
     NSMutableString *mutableString = [[NSMutableString alloc] initWithString:@"string"];
     [NSMutableString reversed: mutableString];
     
-    Employee *original = [[Employee alloc]initWithFirstName:@"pavel" lastName:@"parkhomey" age:@19 email:@"pavelpark@aol.com" yearsEmployed:@2 andManager:@"Brook"];
+    //Employee *original = [[Employee alloc]initWithFirstName:@"pavel" lastName:@"parkhomey" age:@19 email:@"pavelpark@aol.com" yearsEmployed:@2 andManager:@"Brook"];
     
-    Employee *newInstructor = [original copy];
+    //Employee *newInstructor = [original copy];
     
-    newInstructor.firstName = @"Mike";
+    //newInstructor.firstName = @"Mike";
     
     
 //    [[EmpolyeeDataBase shared] add: original];

@@ -8,6 +8,8 @@
 
 #import "TableViewController.h"
 #import "EmpolyeeDataBase.h"
+#import "AddEmployeeViewController.h"
+
 @interface TableViewController () <UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableViewMain;
@@ -57,7 +59,8 @@
     NSArray *employees = [[EmpolyeeDataBase shared] allEmployees];
     Employee *employee = employees[indexPath.row];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ %@",employee.firstName, employee.lastName, employee.email];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ %@", employee.firstName, employee.lastName, employee.email];
+    
     return cell;
 }
 
